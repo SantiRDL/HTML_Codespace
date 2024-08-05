@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Encuesta</h1>
+    <form action="/submit" method="post">
+        <!-- Campo de selección múltiple -->
+        <label for="intereses">Selecciona tus intereses:</label><br>
+        <select id="intereses" name="intereses[]" multiple>
+            <option value="tecnologia">Tecnología</option>
+            <option value="deportes">Deportes</option>
+            <option value="musica">Música</option>
+            <option value="viajes">Viajes</option>
+            <option value="lectura">Lectura</option>
+        </select><br><br>
+        <!-- Botones de radio -->
+        <p>¿Con qué frecuencia usas internet?</p>
+        <input type="radio" id="diario" name="frecuencia" value="diario">
+        <label for="diario">Diario</label><br>
+        <input type="radio" id="semanal" name="frecuencia" value="semanal">
+        <label for="semanal">Semanal</label><br>
+        <input type="radio" id="mensual" name="frecuencia" value="mensual">
+        <label for="mensual">Mensual</label><br>
+        <input type="radio" id="rara_vez" name="frecuencia" value="rara_vez">
+        <label for="rara_vez">Rara vez</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
