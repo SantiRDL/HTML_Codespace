@@ -1,0 +1,11 @@
+/* Estilos para elementos con ambas clases avatar y proportioned */
+.avatar.proportioned {
+    width: 300px;
+    height: auto; /* Mantiene las proporciones originales */
+}
+
+/* Estilos para elementos con ambas clases avatar y distorted */
+.avatar.distorted {
+    width: 200px;
+    height: 400px; /* El doble del ancho */
+}
