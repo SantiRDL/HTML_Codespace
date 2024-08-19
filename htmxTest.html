@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@2.0.2" integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- have a button POST a click via AJAX -->
+    <button hx-post="/clicked" hx-swap="outerHTML">
+      Click Me
+    </button>
+
+    <!-- have a button GET content via AJAX and update a div -->
+    <button hx-get="/getContent" hx-target="#content" hx-swap="innerHTML">
+      Load Content
+    </button>
+
+    <div id="content">
+      <!-- Content will be loaded here -->
+    </div>
+</body>
+</html>
